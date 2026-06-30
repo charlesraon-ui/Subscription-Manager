@@ -1,0 +1,79 @@
+
+================================================================================
+Database Management with GitHub
+================================================================================
+
+IMPORTANT: You should NOT upload your actual database files to GitHub!
+Databases contain dynamic, changing data and GitHub is designed for source code,
+not for database storage.
+
+================================================================================
+RECOMMENDED APPROACH
+================================================================================
+
+1. Store Database Schema/Migration Scripts in GitHub
+   - Keep SQL scripts that create tables and schema
+   - Include any initial seed data (if needed)
+   - Example: schema.sql, seed_data.sql
+
+2. Use the Backup Script to Create Backups Locally
+   - Use database_backup.ps1 to create SQL dumps
+   - Store backups locally or on another backup service
+   - Never commit SQL backup files to GitHub
+
+3. Document Database Setup Instructions
+   - Include steps to create the database
+   - Document required users and permissions
+   - Explain how to restore from backup
+
+================================================================================
+USING THE DATABASE BACKUP SCRIPT
+================================================================================
+
+To create a database backup:
+
+1. Open PowerShell
+2. Navigate to the project directory
+3. Run:
+   .\database_backup.ps1 -DatabaseName "SubscriptionManager" -Username "root" -Password "your_password"
+
+This will create a timestamped SQL backup file in the database_backups/ folder.
+
+================================================================================
+RESTORING FROM BACKUP
+================================================================================
+
+To restore a database from a backup:
+
+1. Open MySQL Workbench or command line
+2. Run:
+   mysql -u root -p SubscriptionManager < database_backups\SubscriptionManager_YYYYMMDD_HHMMSS.sql
+
+Or using MySQL Workbench:
+- Server &gt; Data Import
+- Select "Import from Self-Contained File"
+- Choose your backup .sql file
+- Select target database
+- Click Start Import
+
+================================================================================
+GIT IGNORE RULES
+================================================================================
+
+The .gitignore file is configured to ignore:
+- database_backups/ directory
+- *.sql files (database dumps)
+- Binaries and build artifacts
+
+This prevents accidental commits of sensitive or large files.
+
+================================================================================
+BEST PRACTICES
+================================================================================
+
+- Commit schema changes as SQL scripts, not as database files
+- Create regular backups using database_backup.ps1
+- Store backups separately from GitHub (cloud storage, external drive, etc.)
+- Never commit passwords or sensitive data in configuration files
+- Use environment variables or separate config files for secrets
+
