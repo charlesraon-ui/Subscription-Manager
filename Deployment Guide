@@ -1,0 +1,149 @@
+Subscription Manager - Deployment Guide
+================================================================================
+
+PREREQUISITES
+================================================================================
+1. .NET 10.0 Desktop Runtime (Windows)
+   - Download: https://dotnet.microsoft.com/download/dotnet/10.0
+   - Select the x64 or x86 Desktop Runtime depending on your system
+
+2. MySQL Server (version compatible with MySql.Data 9.6.0)
+   - Download: https://dev.mysql.com/downloads/mysql/
+   - Recommended version: 8.0 or later
+
+3. Gmail Account (for email notifications)
+   - Must have 2-Step Verification enabled
+   - Must generate an App Password
+
+
+DEPLOYMENT STEPS
+================================================================================
+
+Step 1: Install .NET 10.0 Desktop Runtime
+------------------------------------------------
+- Download and run the .NET 10.0 Desktop Runtime installer
+- Follow the installation wizard
+- Restart your computer if prompted
+
+
+Step 2: Install MySQL Server
+------------------------------------------------
+- Download and install MySQL Server (8.0 or later recommended)
+- During installation, set a root password (remember this!)
+- Complete the MySQL Server setup process
+- Verify MySQL service is running (check Services.msc)
+
+
+Step 3: Configure MySQL Database
+------------------------------------------------
+1. Open MySQL Workbench or a MySQL command-line client
+2. Connect as root user
+3. Create a database for the Subscription Manager:
+   CREATE DATABASE SubscriptionManager;
+   
+4. Create a dedicated MySQL user (optional but recommended):
+   CREATE USER 'subscription_user'@'localhost' IDENTIFIED BY 'your_secure_password';
+   GRANT ALL PRIVILEGES ON SubscriptionManager.* TO 'subscription_user'@'localhost';
+   FLUSH PRIVILEGES;
+   
+5. Create the necessary database tables (the application should handle
+   table creation automatically on first run)
+
+
+Step 4: Configure Email Settings
+------------------------------------------------
+1. Open EmailSettings.vb file
+2. Update the following constants as needed:
+   - SMTP_HOST: "smtp.gmail.com" (default)
+   - SMTP_PORT: 587 (default)
+   - SMTP_EMAIL: Your Gmail address
+   - SMTP_PASSWORD: Your Gmail App Password
+   - MAILBEE_LICENSE_KEY: Your MailBee.NET license key
+   
+3. To generate a Gmail App Password:
+   - Go to Google Account Settings &gt; Security
+   - Enable 2-Step Verification
+   - Under "Signing in to Google," select "App Passwords"
+   - Create a new App Password (select "Other" and name it "Subscription Manager")
+   - Use this generated password in SMTP_PASSWORD
+
+
+Step 5: Build the Application
+------------------------------------------------
+Option A: Using Visual Studio
+- Open Subscription Manager.sln in Visual Studio
+- Select "Release" configuration
+- Build the solution (Build &gt; Build Solution)
+
+Option B: Using .NET CLI
+- Open Command Prompt or PowerShell
+- Navigate to the project directory
+- Run: dotnet build --configuration Release
+
+
+Step 6: Deploy the Application Files
+------------------------------------------------
+1. Navigate to the Release build output folder:
+   bin\Release\net10.0-windows\
+   
+2. Copy all files and folders from this directory to your deployment target folder
+   (e.g., C:\Program Files\Subscription Manager)
+   
+3. Ensure the deployment folder contains:
+   - Subscription Manager.exe
+   - All DLL files
+   - Runtimes folder
+   - Any resource files
+
+
+Step 7: Configure Application Settings (First Run)
+------------------------------------------------
+1. Launch Subscription Manager.exe
+2. On first run, the application will:
+   - Create the necessary database tables
+   - Prompt you to configure the database connection
+3. Enter your database connection details (if not configured in code):
+   - Server: localhost
+   - Database: SubscriptionManager
+   - Username: your MySQL username
+   - Password: your MySQL password
+
+
+Step 8: Test the Application
+------------------------------------------------
+1. Launch the application
+2. Add a test subscription to verify functionality
+3. Test the email notification feature
+4. Verify payment tracking works correctly
+
+
+TROUBLESHOOTING
+================================================================================
+
+Issue: .NET Runtime not found
+- Ensure .NET 10.0 Desktop Runtime is installed
+
+Issue: MySQL connection error
+- Verify MySQL service is running
+- Check database name, username, and password
+- Ensure the user has appropriate permissions
+
+Issue: Email notifications not sending
+- Verify Gmail App Password is correct
+- Check that 2-Step Verification is enabled
+- Ensure firewall allows outbound connections on port 587
+- Check application logs for error details
+
+
+MAINTENANCE
+================================================================================
+- Regularly back up the MySQL database
+- Keep .NET runtime and MySQL server updated
+- Update MailBee.NET license key if it expires
+- Change Gmail App Password if compromised
+
+
+LICENSE NOTES
+================================================================================
+This application uses MailBee.NET and MySql.Data NuGet packages.
+Ensure you have appropriate licenses for your environment.
