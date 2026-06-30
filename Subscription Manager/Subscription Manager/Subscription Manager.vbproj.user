@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="CalendarView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CustomCalendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAddSubscription.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NotificationCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PaymentHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SubscriptionDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

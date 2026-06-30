@@ -1,0 +1,40 @@
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\Subscription Manager.exe
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\Subscription Manager.deps.json
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\Subscription Manager.runtimeconfig.json
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\Subscription Manager.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\Subscription Manager.pdb
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\Google.Protobuf.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\K4os.Compression.LZ4.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\K4os.Hash.xxHash.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\MailBee.NET.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\MySql.Data.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\System.Management.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\ZstdSharp.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\bin\Debug\net10.0-windows\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription Manager.vbproj.AssemblyReference.cache
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription_Manager.CalendarView.resources
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription_Manager.CustomCalendar.resources
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription_Manager.Form1.resources
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription_Manager.FormAddSubscription.resources
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription_Manager.Resources.resources
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription_Manager.NotificationCenter.resources
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription_Manager.PaymentHistory.resources
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription_Manager.SubscriptionDetails.resources
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription Manager.vbproj.GenerateResource.cache
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription Manager.AssemblyInfoInputs.cache
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription Manager.AssemblyInfo.vb
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription Manager.vbproj.CoreCompileInputs.cache
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscrip.DE4AE206.Up2Date
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription Manager.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\refint\Subscription Manager.dll
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription Manager.pdb
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\Subscription Manager.genruntimeconfig.cache
+C:\Users\SBSI\source\repos\Subscription Manager\Subscription Manager\obj\Debug\net10.0-windows\ref\Subscription Manager.dll
